@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
 
-TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN", "8791725616:AAFTA05OxSKpzqjwcpWF9FO5ivEdjxUA-_Q")
+TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN", "8791725616:AAG3FnlcHyhI4zDX5sQsHF7jixijkVL2430")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "5640869130")
 
 EVENT_URL = "https://www.ticketmaster.com.mx/bts-world-tour-arirang-in-mexico-ciudad-de-mexico-07-05-2026/event/1400642AA1B78268"
