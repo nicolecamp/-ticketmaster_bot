@@ -70,11 +70,13 @@ def main():
     print("🚀 Bot iniciado — revisión única")
     print(f"TOKEN configurado: {'Sí' if TELEGRAM_TOKEN else 'NO ❌'}")
     print(f"CHAT_ID configurado: {'Sí' if TELEGRAM_CHAT_ID else 'NO ❌'}")
-send_telegram(
+
+    send_telegram(
         "🤖 <b>Bot activo</b>\n"
         "🎤 BTS World Tour – Arirang in Mexico\n"
         "🔍 Revisando disponibilidad..."
     )
+
     available = check_tickets()
 
     if available:
@@ -86,7 +88,7 @@ send_telegram(
             "⚡ ¡Date prisa antes de que se agoten!"
         )
     else:
-        print("😴 Sin disponibilidad por ahora. El workflow volverá a correr en 5 minutos.")
+        print("😴 Sin disponibilidad por ahora.")
 
 if __name__ == "__main__":
     main()
